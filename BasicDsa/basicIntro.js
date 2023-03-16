@@ -7,7 +7,6 @@
             //     Data Struture
  
                     //    ||
-
             // Primitive  => Integer , float , Character , Boolean 
             // Non Primitive => Arrays , List , Files  
 
@@ -27,7 +26,6 @@
 //  Searching
 //  Sorting
 //  Merging
-
 
 
 

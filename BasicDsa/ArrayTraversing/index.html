@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      const Arr = [2, 6, 9, 78, 6, 89, 2, 65, 64, 34, 43, 64];
+
+      // Array Traversing
+      // for(let i=0; i< Arr?.length; i++){
+      //     document.write(`${Arr[i]} <br/>` )
+      // }
+
+      const getData = () => {
+        const newElement = document.getElementById("element").value;
+        console.log( newElement , "newElement" )
+        
+        if(newElement < 0 ){
+            return alert("Number Should be 0 and Greater")
+        }
+        if (newElement < Arr?.length  &&  typeof parseInt(newElement) === "number"  ) {
+          alert(Arr[newElement]);
+        }
+   
+        else{
+            alert("Please Enter valid Number")
+        }
+      };
+    </script>
+
+    <title>Array traversing</title>
+  </head>
+  <body>
+    <div>
+      <input type="text" id="element" />
+      <button onclick="getData()">Get Data</button>
+    </div>
+  </body>
+</html>
