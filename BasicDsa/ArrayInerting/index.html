@@ -4,47 +4,42 @@
     <title>Array Inserting</title>
 
     <script>
-    //   const Arr = [12, 32, 31, 13, 64, 46, 85, 58];
+      // const Arr = [12, 32, 31, 13, 64, 46, 85, 58];
       // Insert With Static  value
-    //   const InserTed = 70;
-    //   const setPosition = 2;
-    //   for (let i = Arr.length - 1; i >= 0; i--) {
-    //     if (i >= setPosition) {
-    //       Arr[i + 1] = Arr[i];
-    //       if (i == setPosition) {
-    //         Arr[i] = InserTed;
-    //       }
-    //     }
-    //   }
-    //   console.log(Arr, 655411);
+      // const InserTed = 70;
+      // const setPosition = 2;
+      // for (let i = Arr.length - 1; i >= 0; i--) {
+      //   if (i >= setPosition) {
+      //     Arr[i + 1] = Arr[i];
+      //     if (i == setPosition) {
+      //       Arr[i] = InserTed;
+      //     }
+      //   }
+      // }
+      // console.log(Arr, 655411);
 
-const Arr = [12, 32, 31, 13, 64, 46, 85, 58];
+      const InserElement = () => {
+        const Arr = [12, 32, 31, 13, 64, 46, 85, 58];
+        const setPosition = document.getElementById("position").value;
+        const InserTed = document.getElementById("NewElement").value;
+        const NewElementParse = parseInt(InserTed)
 
-const InsertValue = ()=>{
-    const Insertval = document.getElementById("InserTedElement").value;
-    const Position = document.getElementById("setPosition").value;
-
-    for(let i=Arr.length-1; i >=0;  i--){
-        if(i>= Position){
-            Arr[i+1]= Arr[i];
-            if(i == Position){
-                Arr[i]= Insertval;
+        for (let i = Arr.length - 1; i >= 0; i--) {
+          if (i >= setPosition) {
+            Arr[i + 1] = Arr[i];
+            if (i == setPosition) {
+              Arr[i] = NewElementParse;
             }
+          }
         }
-    }
-}
-
-console.log( Arr  , "Arr")
-
-
-
-
-
+        console.log(Arr, 655411);
+      };
+      
     </script>
   </head>
   <body>
-    <input type="text"  id="setPosition" placeholder="Enter value Position" />
-    <input type="text" id="InserTedElement" placeholder="Insert your value" />
-    <button onclick="InsertValue()">Inserted</button>
+    <input type="text" id="position" placeholder="Enter value Position" />
+    <input type="text" id="NewElement" placeholder="Insert your value" />
+    <button onclick="InserElement()">Inserted</button>
   </body>
 </html>
