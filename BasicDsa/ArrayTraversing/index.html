@@ -11,15 +11,12 @@
 
       const getData = () => {
         const newElement = document.getElementById("element").value;
-        console.log( newElement , "newElement" )
-        
         if(newElement < 0 ){
             return alert("Number Should be 0 and Greater")
         }
         if (newElement < Arr?.length  &&  typeof parseInt(newElement) === "number"  ) {
           alert(Arr[newElement]);
         }
-   
         else{
             alert("Please Enter valid Number")
         }
