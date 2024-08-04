@@ -14,18 +14,3 @@
 //     });
 //   });
 // });
-
-const firstPromise = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    resolve("First Promise");
-  }, 1000);
-});
-
-const secondPromise = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    resolve("Second Promise");
-  }, 1000);
-});
-
-const allPromise = [firstPromise, secondPromise];
-
