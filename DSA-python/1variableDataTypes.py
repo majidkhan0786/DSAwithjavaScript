@@ -47,3 +47,13 @@ NAME = "Developer"
 # b = 5
 # print(a+b)
 
+# Take input from the user
+a = int(input("Enter value for a: "))
+b = int(input("Enter value for b: "))
+
+sum = a + b
+print(sum)
+
+# Operator proceeding
+# not > and > or
+# expression not True and False or True
